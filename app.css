@@ -1,0 +1,21 @@
+:root {
+  --primary-font-family: "Poppins", sans-serif;
+}
+
+main h1 {
+  font-family: var(--primary-font-family);
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 144px;
+  text-align: center;
+}
+
+main h3 {
+  font-family: var(--primary-font-family);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
