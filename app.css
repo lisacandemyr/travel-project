@@ -96,7 +96,8 @@ main p {
   padding: 20px 0;
 }
 
-.gallery-description {
+.gallery-description,
+.recommendation-description {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 5px;
@@ -107,7 +108,8 @@ main p {
   text-transform: uppercase;
 }
 
-.gallery-headline {
+.gallery-headline,
+.recommendation-headline {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
@@ -126,6 +128,66 @@ main p {
 .gallery img {
   max-width: 300px;
   filter: saturate(85%);
+}
+
+.main-third-section {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin: 50px 90px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card {
+  max-width: 300px;
+  min-width: 300px;
+  padding: 0px;
+}
+
+.card h3 {
+  font-family: var(--primary-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  margin: 10px 0 0 10px;
+}
+
+.card h5 {
+  font-family: var(--primary-font-family);
+  font-size: 17px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.card p {
+  font-family: var(--primary-font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.card a {
+  background: var(--primary-color);
+  border-radius: 0 0 5px 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 footer {
@@ -226,8 +288,15 @@ footer a:hover {
     font-size: 25px;
   }
 
-  main h2 {
+  main h2,
+  .gallery-headline,
+  .recommendation-headline {
     font-size: 30px;
+  }
+
+  .cards {
+    gap: 25px;
+    margin: 20px;
   }
 }
 
@@ -245,13 +314,17 @@ footer a:hover {
     font-size: 15px;
   }
 
-  main h2 {
+  main h2,
+  .gallery-headline,
+  .recommendation-headline {
     font-size: 25px;
   }
 }
 
 @media (max-width: 630px) {
-  main h2 {
+  main h2,
+  .gallery-headline,
+  .recommendation-headline {
     font-size: 20px;
   }
 
@@ -289,7 +362,9 @@ footer a:hover {
     margin: 25px;
   }
 
-  main h2 {
+  main h2,
+  .gallery-headline,
+  .recommendation-headline {
     font-size: 30px;
   }
 }
@@ -307,7 +382,9 @@ footer a:hover {
     font-size: 12px;
   }
 
-  main p {
+  main p,
+  .gallery-description,
+  .recommendation-description {
     font-size: 12px;
     line-height: 15px;
   }
