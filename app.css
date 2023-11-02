@@ -1,20 +1,20 @@
 :root {
   --primary-font-family: "Poppins", sans-serif;
-  --primary-color: #be3a35;
+  --primary-color: #b43725;
 }
 
 body {
+  font-family: var(--primary-font-family);
   margin: 0;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("src/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  font-family: var(--primary-font-family);
   padding: 100px;
   text-align: center;
 }
@@ -53,10 +53,48 @@ header a {
   text-transform: uppercase;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  margin: 120px 170px;
+}
+
+main img {
+  max-width: 600px;
+}
+
+main h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0;
+  text-align: left;
+}
+
+main h4 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 24px;
+  margin: 0;
+  opacity: 0.3;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
 footer {
   background-image: linear-gradient(
-      rgba(165, 20, 30, 0.9),
-      rgba(165, 20, 30, 0.9)
+      rgba(161, 41, 30, 0.9),
+      rgba(161, 41, 30, 0.9)
     ),
     url("src/footer.jpg");
   background-position: center;
@@ -66,11 +104,10 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 50px;
-  padding: 50px 171px;
+  padding: 50px 170px;
 }
 
 footer h6 {
-  font-family: var(--primary-font-family);
   font-size: 15px;
   font-weight: 700;
   line-height: 0px;
@@ -78,7 +115,6 @@ footer h6 {
 }
 
 footer p {
-  font-family: var(--primary-font-family);
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
@@ -97,16 +133,51 @@ footer a:hover {
 }
 
 @media (max-width: 1280px) {
-  main h1 {
+  header h1 {
     font-size: 70px;
     line-height: 50px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin: 50px;
+  }
+
+  main img {
+    max-width: 100%;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 50px;
   }
 }
 
 @media (max-width: 1090px) {
-  main h1 {
+  header h1 {
     font-size: 50px;
     line-height: 50px;
+  }
+
+  header h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  header {
+    padding: 50px;
+  }
+
+  header h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  header h2 {
+    font-size: 25px;
   }
 
   main h2 {
@@ -114,71 +185,79 @@ footer a:hover {
   }
 }
 
-@media (max-width: 950px) {
-  main {
-    padding: 50px;
-  }
-
-  main h1 {
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  main h2 {
-    font-size: 25px;
-  }
-}
-
 @media (max-width: 740px) {
-  main h1 {
+  header h1 {
     font-size: 35px;
     line-height: 50px;
   }
 
-  main h2 {
+  header h2 {
     font-size: 20px;
   }
 
-  main h3 {
+  header h3 {
     font-size: 15px;
+  }
+
+  main h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 630px) {
+  main h2 {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 545px) {
-  main {
+  header {
     padding: 25px;
   }
 
-  main h1 {
+  header h1 {
     font-size: 25px;
     line-height: 50px;
   }
 
-  main h2 {
+  header h2 {
     font-size: 15px;
     line-height: 0px;
   }
 
-  main h3 {
+  header h3 {
     line-height: 0px;
   }
 
-  main a {
+  header a {
     font-size: 10px;
     padding: 8px 25px;
+  }
+
+  main {
+    margin: 25px;
+  }
+
+  main h2 {
+    font-size: 30px;
   }
 }
 
 @media (max-width: 370px) {
-  main h1 {
+  header h1 {
     font-size: 20px;
   }
 
-  main h2 {
+  header h2 {
     font-size: 12px;
   }
 
-  main h3 {
+  header h3 {
     font-size: 12px;
+  }
+
+  main p {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
