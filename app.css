@@ -8,34 +8,31 @@ body {
   margin: 0;
 }
 
+/* HEADER */
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("src/hero.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("src/hero.jpg") center/cover no-repeat;
   color: white;
-  padding: 100px;
+  padding: 125px 0;
   text-align: center;
 }
 
 header h1 {
   font-size: 85px;
   font-weight: 700;
-  line-height: 100px;
+  line-height: 125px;
 }
 
 header h2 {
   font-size: 40px;
-  font-weight: 400;
-  line-height: 100px;
+  margin-bottom: 100px;
 }
 
 header h3 {
   font-size: 24px;
   font-weight: 900;
   letter-spacing: 5px;
-  line-height: 100px;
   text-transform: uppercase;
 }
 
@@ -46,159 +43,119 @@ header a {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
-  line-height: 100px;
   padding: 16px 32px;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
 
+/* MAIN SECTION */
+
 main {
+  align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
-  margin: 120px 170px;
+  grid-template-columns: 1fr 1fr;
+  margin: 120px 125px;
 }
 
 main img {
-  max-width: 600px;
+  max-width: 100%;
 }
 
-main h2 {
+.headline {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 10px;
-  text-align: left;
 }
 
-main h4 {
+.description {
+  font-family: var(--primary-font-family);
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 5px;
   line-height: 24px;
-  margin: 0;
   opacity: 0.3;
   text-align: left;
   text-transform: uppercase;
 }
 
-main p {
+.paragraph {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
-.main-second-section {
+strong {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+}
+
+/* FIRST SECTION */
+
+section {
+  padding: 50px 0;
+}
+
+.section-1 {
   background: #f2f2f2;
-  padding: 20px 0;
-}
-
-.gallery-description,
-.recommendation-description {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 5px;
-  line-height: 24px;
-  margin: 20px 0 0 0;
-  opacity: 0.3;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.gallery-headline,
-.recommendation-headline {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  margin: 0;
-  text-align: left;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 25px;
-  padding: 50px 170px;
-  text-align: center;
-}
-
-.gallery img {
-  max-width: 300px;
-  filter: saturate(85%);
-}
-
-.main-third-section {
-  padding: 20px 0;
-  text-align: center;
 }
 
 .cards {
+  align-items: center;
   display: flex;
   justify-content: center;
-  gap: 80px;
-  margin: 50px 90px;
-}
-
-.card img {
-  max-width: 100%;
-  border-radius: 5px 5px 0 0;
+  gap: 100px;
 }
 
 .card {
-  max-width: 300px;
-  min-width: 300px;
-  padding: 0px;
+  padding: 0;
+  width: 300px;
+  text-align: center;
 }
 
-.card h3 {
-  font-family: var(--primary-font-family);
+.card-body {
+  padding: 5px;
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+}
+
+.card-title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 36px;
-  text-align: left;
-  margin: 10px 0 0 10px;
+  margin-top: 5px;
 }
 
-.card h5 {
-  font-family: var(--primary-font-family);
+.card-sub-title {
   font-size: 17px;
   font-weight: 500;
-  text-align: left;
-  margin-left: 10px;
 }
 
-.card p {
-  font-family: var(--primary-font-family);
+.card-paragraph {
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
-  margin-left: 10px;
 }
 
-.card a {
+.card-link {
   background: var(--primary-color);
   border-radius: 0 0 5px 5px;
   color: white;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 footer {
-  background-image: linear-gradient(
-      rgba(161, 41, 30, 0.9),
-      rgba(161, 41, 30, 0.9)
-    ),
-    url("src/footer.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(161, 41, 30, 0.9), rgba(161, 41, 30, 0.9)),
+    url("src/footer.jpg") center/cover no-repeat;
   color: white;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -231,13 +188,9 @@ footer a:hover {
   transition: all 250ms ease-in-out;
 }
 
-@media (max-width: 1280px) {
-  header h1 {
-    font-size: 70px;
-    line-height: 50px;
-  }
-
-  main {
+@media (max-width: 1400px) {
+  main,
+  .gallery {
     grid-template-columns: 1fr;
     grid-gap: 50px;
     margin: 50px;
@@ -246,9 +199,16 @@ footer a:hover {
   main img {
     max-width: 100%;
   }
+}
 
-  .gallery {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 1280px) {
+  header h1 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+
+  .gallery,
+  .cards {
     padding: 50px 100px;
   }
 
@@ -260,132 +220,5 @@ footer a:hover {
     grid-template-columns: 1fr;
     grid-gap: 10px;
     padding: 50px;
-  }
-}
-
-@media (max-width: 1090px) {
-  header h1 {
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  header h2 {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 950px) {
-  header {
-    padding: 50px;
-  }
-
-  header h1 {
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  header h2 {
-    font-size: 25px;
-  }
-
-  main h2,
-  .gallery-headline,
-  .recommendation-headline {
-    font-size: 30px;
-  }
-
-  .cards {
-    gap: 25px;
-    margin: 20px;
-  }
-}
-
-@media (max-width: 740px) {
-  header h1 {
-    font-size: 35px;
-    line-height: 50px;
-  }
-
-  header h2 {
-    font-size: 20px;
-  }
-
-  header h3 {
-    font-size: 15px;
-  }
-
-  main h2,
-  .gallery-headline,
-  .recommendation-headline {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 630px) {
-  main h2,
-  .gallery-headline,
-  .recommendation-headline {
-    font-size: 20px;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-    padding: 50px;
-  }
-}
-
-@media (max-width: 545px) {
-  header {
-    padding: 25px;
-  }
-
-  header h1 {
-    font-size: 25px;
-    line-height: 50px;
-  }
-
-  header h2 {
-    font-size: 15px;
-    line-height: 0px;
-  }
-
-  header h3 {
-    line-height: 0px;
-  }
-
-  header a {
-    font-size: 10px;
-    padding: 8px 25px;
-  }
-
-  main {
-    margin: 25px;
-  }
-
-  main h2,
-  .gallery-headline,
-  .recommendation-headline {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 370px) {
-  header h1 {
-    font-size: 20px;
-  }
-
-  header h2 {
-    font-size: 12px;
-  }
-
-  header h3 {
-    font-size: 12px;
-  }
-
-  main p,
-  .gallery-description,
-  .recommendation-description {
-    font-size: 12px;
-    line-height: 15px;
   }
 }
