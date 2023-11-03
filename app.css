@@ -124,6 +124,11 @@ section {
   max-width: 100%;
 }
 
+.card iframe {
+  max-width: 100%;
+  height: 75px;
+}
+
 .card-title {
   font-size: 24px;
   font-weight: 700;
@@ -151,6 +156,22 @@ section {
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+/* SECOND SECTION */
+
+.instagram-gallery {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 0 200px;
+}
+
+.instagram-media {
+  max-width: 300px;
+  max-height: 463px;
+  filter: contrast(92.5%) saturate(90%);
 }
 
 footer {
